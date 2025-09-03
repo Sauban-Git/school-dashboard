@@ -93,7 +93,7 @@ export default function ShowSchools() {
                   <Image
                     width={512}
                     height={512}
-                    src={`/${image}`}
+                    src={image!}
                     alt={name}
                     className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
                   />

@@ -3,20 +3,13 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   staticPageGenerationTimeout: 300,
   images: {
-    localPatterns: [
+    remotePatterns: [
       {
-        pathname: '/schoolImages/**',
-        search: '',
+        protocol: 'https',
+        hostname: '**.public.blob.vercel-storage.com',
+        pathname: '/**',
       },
     ],
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/schoolImages/:path*',
-        destination: '/schoolImages/:path*',
-      },
-    ];
   },
 };
 
