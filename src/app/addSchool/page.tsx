@@ -112,9 +112,10 @@ export default function AddSchool() {
           type="file"
           {...register('file', { required: 'Image is required' })}
           accept="image/*"
-          className="w-full"
+          className=" p-1 border bg-gray-700"
         />
         {errors.file && <p className="text-red-600">{errors.file.message}</p>}
+        <br/>
 
         <button
           type="submit"
