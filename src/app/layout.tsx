@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your App Title",
-  description: "App Description",
+  title: "School Dashboard",
+  description: "Stores School list for advertisement or else purpose",
   icons: {
     icon: "/school.svg",
-    shortcut: "/favicon.ico",
+    shortcut: "/school.svg",
     apple: "/apple-touch-icon.png",
   },
 };
